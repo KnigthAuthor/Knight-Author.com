@@ -58,7 +58,7 @@
                 <h2>LATEST TRANSMISSION</h2>
                 <img src="/Imgs/Space-Riders.jpg" alt="Book Cover">
                 <h3>A Space Rider's journey</h3>
-                <a
+                <a target="_blank"
                     href="https://www.amazon.com/SPACE-RIDERS-JOURNEY-FATE-VOID/dp/B0F11RM57Y/ref=sr_1_1?crid=9LC2AIWK95VK&dib=eyJ2IjoiMSJ9.aQ86yjIWfTrcNellgxDRJtmp2zgpLaZ9pTniv2vrhlsMi2Gq2ERNneJE4FzF3sa7aTIf_qXJsW9Ox7rgC2wHKYPUmAP3IBmBCnX2pIQrUxTZbI054nHiY1QgxVSAwQKVKmQOn9TEhYTKravQyt97rCG0lvz7qu-tUTZPUwPy9TONvHBZf-K3VQ68ODiyuTVlRTcVkVEsEzqqyQwfj8Oaz1n71IJcBctbsJfTG8DYcLs.vPDo7RCxAAuRmyJBy0orxlyCy5ToRr1Yrnr4sqwqKAs&dib_tag=se&keywords=a+space+rider's+journey&qid=1762377636&sprefix=a+space+rider's+journey%2Caps%2C135&sr=8-1"><button>Buy
                         on Amazon</button></a>
 
@@ -73,10 +73,9 @@
                         <img style="border: white 1px;" src="/Imgs/ENTER_THE_BLOCKCHAIN_COVER.png" alt="Book Cover">
                         <h3>Enter The Blockchain</h3>
                         <p>A multi-story series</p>
-                        <!-- <button>Explore Book</button> -->
                     </div>
                     <div class="book">
-                        <a
+                        <a target="_blank"
                             href="https://www.amazon.com/Tales-Fellowship-Indie-Author-1-ebook/dp/B0FM4D2PQ5/ref=sr_1_1?crid=2GY3TUHVFVZGH&dib=eyJ2IjoiMSJ9.NP_sJVVNHqQhJuibiZ0zNg.Z5WOSZEoW92QycOLzj2YsZk_s7n9nKks3endV4-qB7s&dib_tag=se&keywords=tales+from+the+fellowship+of+the+indie+author&qid=1762377716&sprefix=fellowship+of+the+indie%2Caps%2C156&sr=8-1">
                         <img src="/Imgs/TFF.jpg" alt="Book Cover">
                         <h3>Tales from the Fellowship of the Indie Author: Volume 1</h3>
@@ -90,8 +89,6 @@
                                 McPherson, Jason W. Mizer, Nathan J. Pearce, B. Potratz, J.L. Rademacher, Jan Rhele, Ian
                                 J. Snow., Kit Spaleta, and Richard C. White.</em>
                         </p>
-
-                        <!-- <button>Explore Book</button> -->
                         </a>
 
                     </div>
@@ -116,10 +113,10 @@
                 </div>
 
                 <div class="social-media-container">
-                    <a href="https://x.com/M_Allen_Knight" class="social-btn twitter" aria-label="Twitter">
+                    <a target="_blank" href="https://x.com/M_Allen_Knight" class="social-btn twitter" aria-label="Twitter">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
-                    <a href="https://www.amazon.com/stores/M.-Allen-Knight/author/B0F23PVKZD?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=52f7d1aa-037b-4aef-9bf6-a63b81c21eab"
+                    <a target="_blank" href="https://www.amazon.com/stores/M.-Allen-Knight/author/B0F23PVKZD?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=52f7d1aa-037b-4aef-9bf6-a63b81c21eab"
                         class="social-btn amazon" aria-label="Amazon Author Page">
                         <i class="fab fa-amazon"></i>
                     </a>
@@ -145,32 +142,6 @@
     </div>
 
     <script src="main.js"></script>
-    <script>
-        // Hamburger menu functionality
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav')) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 
 </html>

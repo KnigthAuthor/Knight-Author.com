@@ -595,7 +595,7 @@ nav a:hover {
 .book img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -842,6 +842,9 @@ footer p {
 
     .contact {
         padding: 1.5rem 0.5rem;
+    }
+    .contact button{
+        align-items: center;
     }
 
     form {
