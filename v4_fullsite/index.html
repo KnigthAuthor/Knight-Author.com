@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the immersive worlds and visionary stories of Knight Author, acclaimed science fiction author of Enter The Blockchain. Explore futuristic universes, complex characters, and thought-provoking concepts that challenge the boundaries of imagination. Browse latest releases, upcoming projects, and join the community of readers exploring the frontiers of speculative fiction.">
+    <meta name="keywords" content="Science fiction, Sci-fi author, Speculative fiction, Futuristic novels, Space opera, Cyberpunk, Post-apocalyptic fiction, Dystopian worlds, Time travel, Artificial intelligence, Space exploration, Alien civilizations, Multiverse, Interstellar, Quantum fiction, Hard sci-fi, Soft sci-fi, Military sci-fi, First contact, Near-future fiction, Knight Author books, Knight Author series, Science fiction worlds, Character-driven sci-fi, Award-winning science fiction, New releases, Upcoming novels, Newsletter signup, Author events, Book signings">
+    <meta name="author" content="Knight Author">
+    <title>Knight Author</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/1088b728fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="starry-background"></div>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    
+    <div class="content-wrapper">
+        <nav>
+            <div class="nav-container">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header id="home">
+            <div class="planet"></div>
+            <div class="header-content">
+                <h1>KNIGHT AUTHOR</h1>
+                <p>GALACTIC CHRONICLES & STELLAR SAGAS</p>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>LATEST TRANSMISSION</h2>
+                <img src="https://placehold.co/800x400" alt="Book Cover">
+                <h3>"QUANTUM NEXUS: PROTOCOL ZERO"</h3>
+                <button>INITIATE SEQUENCE</button>
+            </div>
+        </section>
+
+        <section id="books" class="books">
+            <div class="container">
+                <h2>Popular selections</h2>
+                <div class="books-grid">
+                    <div class="book">
+                        <img style="border: white 1px;" src="/Imgs/ENTER_THE_BLOCKCHAIN_COVER.png" alt="Book Cover">
+                        <h3>Enter The Blockchain</h3>
+                        <p>First in the Stellar Gates trilogy</p>
+                        <button>Explore Book</button>
+                    </div>
+                    <div class="book">
+                        <img src="https://placehold.co/300x400" alt="Book Cover">
+                        <h3>Book 2</h3>
+                        <p>A standalone space opera epic</p>
+                        <button>Explore Book</button>
+                    </div>
+                    <div class="book">
+                        <img src="https://placehold.co/300x400" alt="Book Cover">
+                        <h3>Book 3</h3>
+                        <p>The latest cosmic adventure</p>
+                        <button>Explore Book</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About the Author</h2>
+                </div>
+                <p style="text-align: center;">Sharing the spark of creative writing after ignoring the stories in my head for years. In 2022 I began to build a fictional world based on inspiration from my love of Science Fiction and Fantasy stories, games and movies. During this process I have also been writing short stories based on communities I've been a part of who have encouraged me during my writing journey. I never know where the sparks will lead until I've finished writing, no matter what plan I set in place. Join me in following the sparks as they fly through the stars, taking us to futuristic landscapes and adventures.</p> <br /><br />
+                <div class="section-header">
+                    <h2>Social Media</h2>
+                </div>
+                
+                <div class="social-media-container">
+                    <a href="https://twitter.com/yourhandle" class="social-btn twitter" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/yourpage" class="social-btn facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/yourhandle" class="social-btn instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://amazon.com/author/yourname" class="social-btn amazon" aria-label="Amazon Author Page">
+                        <i class="fab fa-amazon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Knight Author | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
