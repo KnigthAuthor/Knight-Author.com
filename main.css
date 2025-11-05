@@ -40,6 +40,10 @@ body {
     width: 100%;
 }
 
+a { 
+    text-decoration: none;
+}
+
 .starry-background {
     position: fixed;
     top: 0;
