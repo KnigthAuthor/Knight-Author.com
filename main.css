@@ -494,6 +494,7 @@ nav a:hover {
     height: auto;
     display: block;
     margin: 0 auto;
+    border: 1px solid #6585fa;
     box-shadow: 0 8px 32px rgba(74, 113, 255, 0.3);
 }
 
@@ -581,10 +582,10 @@ nav a:hover {
 .book::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: -200%;
+    left: -210%;
+    width: 250%;
+    height: 281%;
     background: linear-gradient(
         45deg,
         transparent,
@@ -609,8 +610,11 @@ nav a:hover {
     height: fit-content;
     max-height: 600px;
     object-fit: cover;
+    border: 1px solid #6585fa;
+    box-shadow: 0 8px 32px rgba(74, 113, 255, 0.3);
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    display: block;
 }
 
 .book h3 {
