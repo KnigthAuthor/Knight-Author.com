@@ -124,10 +124,14 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form action="https://formsubmit.co/m.allen@knight-author.com" method="POST">
+                    <!-- Honneypot -->
+                     <input type="text" name="_honey" style="display: none;">
+                     <!-- Disable Captcha -->
+                      <input type="hidden" name="_captcha" value="false">
+                    <input type="text" placeholder="Your Name" required name="Name">
+                    <input type="email" placeholder="Your Email" required name="Email">
+                    <textarea placeholder="Your Message" rows="5" required name="Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
