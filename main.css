@@ -397,22 +397,24 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(3, 3, 24, 0.95);
-    backdrop-filter: blur(10px);
+    background: none;
+    backdrop-filter: blur(3px);
     z-index: 1000;
 }
 
 .nav-container {
     position: relative;
+    width: fit-content;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .hamburger {
+    
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.5rem;
     background: none;
     border: none;
     z-index: 1001;
@@ -421,7 +423,7 @@ nav {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #4a71ff;
+    background: white;
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 3px;
@@ -457,7 +459,7 @@ nav ul {
 }
 
 nav a {
-    color: #4a71ff;
+    color: white;
     text-decoration: none;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     transition: text-shadow 0.3s;
@@ -478,14 +480,16 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     position: relative;
-    margin: 2rem 0;
-    padding: 2rem 1rem;
-    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    width: fit-content;
+    height: auto;
+    
 }
 
 .hero img {
     border-radius: 15px;
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -501,7 +505,7 @@ nav a:hover {
     border-radius: 10px;
     animation: glow 4s infinite;
     width: 100%;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -563,6 +567,7 @@ nav a:hover {
     overflow: hidden;
     width: 100%;
     max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -593,8 +598,8 @@ nav a:hover {
 }
 
 .book img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: fit-content;
     max-height: 600px;
     object-fit: cover;
     border-radius: 10px;
@@ -610,11 +615,14 @@ nav a:hover {
 }
 
 .about {
-    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    margin: 2rem 1rem;
+    margin: auto ;
+    max-width: 90%;
 }
 
 .about p {
@@ -626,8 +634,12 @@ nav a:hover {
     padding: 2rem 1rem;
 }
 
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
 form {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     width: 100%;
 }
@@ -652,6 +664,7 @@ textarea::placeholder {
 }
 
 button {
+    text-align: center;
     padding: 1rem 2rem;
     background: #4a71ff;
     color: white;
@@ -661,7 +674,7 @@ button {
     transition: all 0.3s;
     font-size: clamp(0.9rem, 2vw, 1rem);
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 button:hover {
@@ -730,7 +743,7 @@ footer p {
         display: flex;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 250px;
     }
 
     nav ul {
@@ -739,7 +752,7 @@ footer p {
         width: 100%;
         position: absolute;
         top: 100%;
-        left: 0;
+        right: 250px;
         background: rgba(3, 3, 24, 0.98);
         padding: 0;
         gap: 0;
